@@ -1,0 +1,24 @@
+{
+  "name": "blinkas",
+  "version": "1.0.0",
+  "description": "Social bookmarking service",
+  "main": "src/backend/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aduwillie/blinkas.git"
+  },
+  "keywords": [
+    "Blinkas",
+    "Social",
+    "Bookmarking"
+  ],
+  "author": "Adu Williams",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aduwillie/blinkas/issues"
+  },
+  "homepage": "https://github.com/aduwillie/blinkas#readme"
+}
