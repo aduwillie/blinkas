@@ -4,6 +4,7 @@
   "description": "Social bookmarking service",
   "main": "src/backend/index.js",
   "scripts": {
+    "start": "node ./src/backend/index.js",
     "test": "echo \"Error: no test specified\" && exit 0"
   },
   "repository": {
