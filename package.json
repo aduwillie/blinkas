@@ -23,11 +23,12 @@
   },
   "homepage": "https://github.com/aduwillie/blinkas#readme",
   "devDependencies": {
+    "eslint": "^5.16.0",
     "husky": "^2.3.0"
   },
-    "husky": {
-      "hooks": {
-        "pre-commit": "eslint src --fix"
-      }
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint src --fix"
     }
+  }
 }
