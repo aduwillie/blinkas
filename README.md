@@ -1,0 +1,3 @@
+# Blinkas
+
+Social bookmarking website
