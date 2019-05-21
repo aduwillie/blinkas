@@ -9,19 +9,17 @@ pipeline {
     stages {
         stage('Install') {
             steps {
-                sh 'node -v'
-                sh 'npm -v'
-                sh 'npm install'
+                echo 'Install stage'
             }
         }
         stage('Test') {
             steps {
-                sh 'npm test'
+                echo 'Test stage'
             }
         }
         stage('Deploy') {
             steps {
-                sh 'docker stack deploy -c docker-compose.yml blinkas'
+                echo 'Deploy stage'
             }
         }
     }
