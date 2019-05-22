@@ -21,5 +21,14 @@
   "bugs": {
     "url": "https://github.com/aduwillie/blinkas/issues"
   },
-  "homepage": "https://github.com/aduwillie/blinkas#readme"
+  "homepage": "https://github.com/aduwillie/blinkas#readme",
+  "devDependencies": {
+    "eslint": "^5.16.0",
+    "husky": "^2.3.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "eslint src --fix"
+    }
+  }
 }
