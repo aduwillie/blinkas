@@ -1,6 +1,32 @@
-const http = require('http');
+const Hapi = require('@hapi/hapi');
+const pug = require('pug');
+const Vision = require('@hapi/vision'); 
 
-http.createServer((_, res) => {
-    res.write('Blinkas web server');
-    res.end();
-}).listen(3000);
+const init = async () => {
+    const server = Hapi.server({
+        port: 3000,
+        host: 'localhost'
+    });
+    await server.register(Vision);
+    server.views({
+        engines: {
+            pug: pug
+        },
+        relativeTo: __dirname,
+        path: './../frontend/views'
+    });
+    server.route({
+        method: 'GET',
+        path: '/',
+        handler: (request, h) => {
+            return 'hello world'
+        }
+    });
+    await server.start();
+    console.log('Server running on ', server.info.uri)
+};
+process.on('unhandledRejection', (err) => {
+    console.log(err);
+    process.exit(1);
+});
+init();
