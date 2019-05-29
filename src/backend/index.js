@@ -1,7 +1,8 @@
-const Hapi = require('@hapi/hapi');
-const pug = require('pug');
-const Vision = require('@hapi/vision'); 
-
+/* eslint-disable */
+import Hapi from '@hapi/hapi';
+import pug from 'pug';
+import Vision from '@hapi/vision';
+ 
 const init = async () => {
     const server = Hapi.server({
         port: 3000,
@@ -19,11 +20,11 @@ const init = async () => {
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            return 'hello world'
+            return 'hello world';
         }
     });
     await server.start();
-    console.log('Server running on ', server.info.uri)
+    console.log('Server running on ', server.info.uri);
 };
 process.on('unhandledRejection', (err) => {
     console.log(err);
