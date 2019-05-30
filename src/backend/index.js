@@ -2,19 +2,19 @@
 import Hapi from '@hapi/hapi';
 import pug from 'pug';
 import Vision from '@hapi/vision';
+import constants from './../../constants'
  
-const init = async () => {
+const init = async (shouldStart) => {
     const server = Hapi.server({
-        port: 3000,
-        host: 'localhost'
-    });
+        port: constants.DEFAULT_PORT
+        });
     await server.register(Vision);
     server.views({
         engines: {
             pug: pug
         },
         relativeTo: __dirname,
-        path: './../frontend/views'
+        path: './../bakckend/views'
     });
     server.route({
         method: 'GET',
@@ -23,11 +23,13 @@ const init = async () => {
             return 'hello world';
         }
     });
-    await server.start();
-    console.log('Server running on ', server.info.uri);
+    if(shouldStart){
+        await server.start();
+        console.log('Server running on ', server.info.uri);
+    }
 };
 process.on('unhandledRejection', (err) => {
-    console.log(err);
+    console.error(err);
     process.exit(1);
 });
-init();
+export default init
