@@ -2,7 +2,8 @@
 import Hapi from '@hapi/hapi';
 import pug from 'pug';
 import Vision from '@hapi/vision';
-import constants from './../../constants'
+
+import constants from '../../constants'
  
 const init = async (shouldStart) => {
     const server = Hapi.server({
@@ -36,4 +37,4 @@ process.on('uncaughtException', (err) => {
     console.error(err);
     process.exit(1);
 })
-export default init
+export default init;
