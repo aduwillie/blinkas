@@ -17,5 +17,3 @@ describe('<Input/> rendering', ()=>{
             expect(component).toMatchSnapshot();
     });
 });
-
- 
