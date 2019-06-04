@@ -1,13 +1,7 @@
 import React from 'react';
-import Input from './Input';
 import renderer from 'react-test-renderer'
+import Input from './Input';
 
-
-let component;
-
-beforeEach(()=>{
-    component = shallow(<Input/>)
-});
 
 describe('<Input/> rendering', ()=>{
     it('renders correctly', ()=>{
