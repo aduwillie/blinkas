@@ -4,6 +4,6 @@ import Button from './Button';
 
 describe('Button', () => {
   it('matches snapshot', () => {
-    matches(<Button>Sign in</Button>);
+    matches(<Button/>);
   });
 });
