@@ -17,7 +17,5 @@ class LoginBanner extends Component {
     }
 
 }
-export default LoginBanner;
 
-   
-
+export default LoginBanner;  
