@@ -36,5 +36,8 @@
     "hooks": {
       "pre-commit": "eslint src --fix"
     }
+  },
+  "dependencies": {
+    "pug": "^2.0.3"
   }
 }
