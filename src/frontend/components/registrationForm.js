@@ -6,23 +6,25 @@ import Select from "./Select";
 class RegistrationForm extends Component {
   constructor(props) {
     super(props);
-    this.state = {};
   }
   handleChange = () => {
     console.log("Changes made in input ");
   };
+  handleInputChange = () => {
+    console.log("Changes made in input");
+  };
+  handleSubmit = () => {
+    console.log("Submit button clicked");
+  };
   getDays = () => {
-    const days = ["Day"];
-    let newDate = new Date();
-    let date = newDate.getDate();
-    Array.from(new Array(31), (v, i) => (
-      days.push(date)
-    ));
-    return days
+    const days = [];
+    for (let i = 1; i <= 31; i++) {
+      days.push(i);
+    }
+    return days;
   };
   getMonths = () => {
     var months = [
-      "month",
       "Jan",
       "Feb",
       "Mar",
@@ -36,15 +38,15 @@ class RegistrationForm extends Component {
       "Nov",
       "Dec"
     ];
-    return  months
+    return months;
   };
-  getYears = () => {
-    const years = ["Year"];
-    const year = new Date().getFullYear();
-     Array.from(new Array(80), (v, i) => (
-      years.push(year - i)
-    ));
-    return years
+  getYear = () => {
+    const years = [];
+    const currentYear = new Date().getFullYear();
+    for (let i = 1920; i <= currentYear; i++) {
+      years.push(i);
+    }
+    return years;
   };
   render() {
     return (
@@ -55,43 +57,60 @@ class RegistrationForm extends Component {
         <Input
           type="text"
           name="fullname"
+          value="fullname"
           placeholder="First name and Last name(s)"
-          onChange={this.handleChange}
+          onChange={this.handleInputChange}
         />
-
-        <Select name="day" onChange={this.handleChange} options = {this.getDays}/> 
-        <Select name="month" onChange={this.handleChange} options = {this.getMonths}/>
-        <Select name="year" onChange={this.handleChange} options = {this.getYears}/>
-          
+        <Select
+          name="day"
+          onChange={this.handleChange}
+          options={this.getDays()}
+          className="days_list"
+        />
+        <Select
+          name="month"
+          onChange={this.handleChange}
+          options={this.getMonths()}
+          className="months_list"
+        />
+        <Select
+          name="year"
+          onChange={this.handleChange}
+          options={this.getYears()}
+          className="years_list"
+        />
         <Input
           type="text"
+          value="email"
           name="email"
           placeholder="Email"
-          onChange={this.handleChange}
+          onChange={this.handleInputChange}
         />
         <Input
           type="text"
+          value="email"
           name="password"
           placeholder="Password"
-          onChange={this.handleChange}
+          onChange={this.handleInputChange}
         />
         <Input
           type="text"
+          value="password"
           name="password"
           placeholder="Confirm Password"
-          onChange={this.handleChange}
+          onChange={this.handleInputChange}
         />
         <Button
           className="submit-button"
           buttonText="Create Hub"
           type="button"
+          onClick={this.handleSubmit}
         />
         <div className="terms-of-service">
           <p>
-            By clicking "Create Hub", you agree to our{" "}
-            <a href="http://blinkas.azurewebsites.net/#">Terms of Service</a>,{" "}
-            <a href="http://blinkas.azurewebsites.net/#">Privacy Policy</a> and{" "}
-            <a href="http://blinkas.azurewebsites.net/#">Cookie Policy</a>
+            By clicking "Create Hub", you agree to our
+            <a href="#">Terms of Service</a>,<a href="#">Privacy Policy</a> and
+            <a href="#">Cookie Policy</a>
           </p>
         </div>
       </div>
