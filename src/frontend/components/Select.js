@@ -1,8 +1,9 @@
 import React, { Component } from 'react'
+
 import './style.scss'
 const Select =(props)=> {
    return (
-         <select name ={props.name} className="blinkas-black" onChange={props.onChange}>
+         <select name ={props.name} className={props.classname} onChange={props.onChange}>
            {
              props.options.map((item , index)=>(
                <option key ={index} value = {item}>{item}</option>
