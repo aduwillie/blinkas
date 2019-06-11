@@ -30,7 +30,9 @@
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "husky": "^2.3.0",
-    "nodemon": "^1.19.0"
+    "nodemon": "^1.19.0",
+    "webpack": "^4.33.0",
+    "webpack-dev-server": "^3.7.1"
   },
   "husky": {
     "hooks": {
