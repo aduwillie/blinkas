@@ -12,13 +12,13 @@ class RegistrationForm extends Component {
     console.log("Changes made in input ");
   };
   getDays = () => {
+    const days = ["Day"];
     let newDate = new Date();
     let date = newDate.getDate();
-    return Array.from(new Array(31), (v, i) => (
-      <option key={i} value={date + i}>
-        {date + i}
-      </option>
+    Array.from(new Array(31), (v, i) => (
+      days.push(date)
     ));
+    return days
   };
   getMonths = () => {
     var months = [
@@ -36,19 +36,15 @@ class RegistrationForm extends Component {
       "Nov",
       "Dec"
     ];
-    return months.map((months, index) => (
-      <option key={index} value={months}>
-        {months}
-      </option>
-    ));
+    return  months
   };
   getYears = () => {
+    const years = ["Year"];
     const year = new Date().getFullYear();
-    return Array.from(new Array(80), (v, i) => (
-      <option key={i} value={year - i}>
-        {year - i}
-      </option>
+     Array.from(new Array(80), (v, i) => (
+      years.push(year - i)
     ));
+    return years
   };
   render() {
     return (
@@ -63,18 +59,10 @@ class RegistrationForm extends Component {
           onChange={this.handleChange}
         />
 
-        <Select name="day" onChange={this.handleChange}>
-          {" "}
-          {this.getDays()}
-        </Select>
-        <Select name="month" onChange={this.handleChange}>
-          {" "}
-          {this.getMonths()}
-        </Select>
-
-        <Select name="year" onChange={this.handleChange}>
-          {this.getYears()}
-        </Select>
+        <Select name="day" onChange={this.handleChange} options = {this.getDays}/> 
+        <Select name="month" onChange={this.handleChange} options = {this.getMonths}/>
+        <Select name="year" onChange={this.handleChange} options = {this.getYears}/>
+          
         <Input
           type="text"
           name="email"
