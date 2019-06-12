@@ -5,8 +5,7 @@ export default class PopularMenu extends Component {
         return (
             <div>
                 <ul>
-                <li >
-                    
+                <li >                    
                     <div>
                       <img src="./img/signup_learning.png"/>
                     </div>

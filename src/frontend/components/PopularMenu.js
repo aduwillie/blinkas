@@ -12,32 +12,31 @@ export default class PopularMenu extends Component {
     render() {
         return (
             <div>
-                <div className="popularMenus" >
-         <ul >
-                <li >
-                      <News/>
-                </li>
-                <li >
-                    <Software/>
-                </li>
-                <li >
-                   <Video/>
-                </li>
-                
-                <li >
-                    <Reading/>
-                </li>
-                <li >
-                    <Learning/>                    
-                </li>
-                <li >
-                    <Entertainment/>
-                </li>
-                <li >
-                    <Office/>
-                </li>
-            </ul>
-            </div>
+               <div className="popularMenus" >
+                    <ul >
+                        <li >
+                            <News/>
+                        </li>
+                        <li >
+                            <Software/>
+                        </li>
+                        <li >
+                        <Video/>
+                        </li>                
+                        <li >
+                            <Reading/>
+                        </li>
+                        <li >
+                            <Learning/>                    
+                        </li>
+                        <li >
+                            <Entertainment/>
+                        </li>
+                        <li >
+                            <Office/>
+                        </li>
+                    </ul>
+                </div>
             </div>
         )
     }
