@@ -1,8 +1,9 @@
 .inputStyle{
     color: $blinkas-black;
     border: 2px solid $blinkas-faded-black;
-    & {@include placeholder{
-        color: $blinkas-faded-black;
+    &{
+        @include placeholder{
+            color: $blinkas-faded-black;
+        }
     }
-}
 }
