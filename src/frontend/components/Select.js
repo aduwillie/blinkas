@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-
 import './style.scss'
+
 const Select =(props)=> {
    return (
          <select name ={props.name} className={props.classname} onChange={props.onChange}>
