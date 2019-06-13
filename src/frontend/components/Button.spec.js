@@ -8,7 +8,7 @@ describe('Button', () => {
   });
 });
 it('calls "onClick" prop on button click', () => {
-  const onClick = jest.fn();
-   matches(<Button onClick={onClick} />);
-  expect(onClick).toHaveBeenCalled();
+  const mockfn = jest.fn();
+   matches(<Button onClick={mockfn} />);
+  expect(mockfn).toHaveBeenCalled();
 });
