@@ -10,9 +10,6 @@ class RegistrationForm extends Component {
   handleChange = () => {
     console.log("Changes made in input ");
   };
-  handleInputChange = () => {
-    console.log("Changes made in input");
-  };
   handleSubmit = () => {
     console.log("Submit button clicked");
   };
@@ -59,7 +56,7 @@ class RegistrationForm extends Component {
           name="fullname"
           value="fullname"
           placeholder="First name and Last name(s)"
-          onChange={this.handleInputChange}
+          onChange={this.handleChange}
         />
         <Select
           name="day"
@@ -84,21 +81,21 @@ class RegistrationForm extends Component {
           value="email"
           name="email"
           placeholder="Email"
-          onChange={this.handleInputChange}
+          onChange={this.handleChange}
         />
         <Input
           type="text"
           value="email"
           name="password"
           placeholder="Password"
-          onChange={this.handleInputChange}
+          onChange={this.handleChange}
         />
         <Input
           type="text"
           value="password"
           name="password"
           placeholder="Confirm Password"
-          onChange={this.handleInputChange}
+          onChange={this.handleChange}
         />
         <Button
           className="submit-button"
