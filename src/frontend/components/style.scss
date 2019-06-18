@@ -3,7 +3,7 @@
     background-color: $blinkas-black;
     width: 100%;
     margin: 0 auto;
-    &{
+    & {
         @include bannerName{
             color: $blinkas-white;
             font-size: 4rem;
