@@ -1,11 +1,17 @@
-const React = require('react')
+import React, { Component } from 'react'
 
-const Button = (props) => {
-  const onClick=()=>{
-    console.log('I have been clicked');
-    
+export default class Button extends Component {
+  constructor(props){
+    super(props)
   }
-  return (
-   <button className={props.className} onClick={props.onClick}> {props.buttonText} </button> 
- )}
- export default Button; 
+  onClick=()=>{
+    console.log('I have been clicked');    
+  }
+  render() {
+    return (
+      <div>
+        <button className={this.props.className} onClick={this.props.onClick}>{this.props.buttonText}</button>         
+      </div>
+    )
+  }
+}
