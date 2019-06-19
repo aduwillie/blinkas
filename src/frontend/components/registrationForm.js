@@ -3,47 +3,37 @@ import Input from "./input";
 import Button from "./button";
 import Select from "./Select";
 
+
 class RegistrationForm extends Component {
   constructor(props) {
     super(props);
+    this.period = {
+      days: [],
+      months: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+      years: []
+    };
   }
-  handleChange = () => {
-    console.log("Changes made in input ");
+  handleChange = ()=> {
+    return "Changes made in input ";
   };
-  handleSubmit = () => {
-    console.log("Submit button clicked");
+  handleSubmit = ()=> {
+    return "Submit button clicked";
   };
-  getDays = () => {
-    const days = [];
-    for (let i = 1; i <= 31; i++) {
-      days.push(i);
+  getDays = ()=>{
+    for(let i=1; i<=31; i++){
+      this.period.days.push(i)
     }
-    return days;
+    return this.period.days;
   };
-  getMonths = () => {
-    var months = [
-      "Jan",
-      "Feb",
-      "Mar",
-      "Apr",
-      "May",
-      "Jun",
-      "Jul",
-      "Aug",
-      "Sep",
-      "Oct",
-      "Nov",
-      "Dec"
-    ];
-    return months;
+  getMonths = ()=>{
+    return [...this.period.months];
   };
-  getYear = () => {
-    const years = [];
-    const currentYear = new Date().getFullYear();
-    for (let i = 1920; i <= currentYear; i++) {
-      years.push(i);
+  getYears = ()=>{
+    let currentYear = new Date().getFullYear();
+    for(let i = currentYear; i>=1920; i--){
+      this.period.years.push(i)
     }
-    return years;
+    return this.period.years;
   };
   render() {
     return (
@@ -59,18 +49,21 @@ class RegistrationForm extends Component {
           onChange={this.handleChange}
         />
         <Select
+          defaultOption = 'Day'
           name="day"
           onChange={this.handleChange}
           options={this.getDays()}
           className="days_list"
         />
         <Select
+          defaultOption = 'Month'
           name="month"
           onChange={this.handleChange}
           options={this.getMonths()}
           className="months_list"
         />
         <Select
+          defaultOption = 'Year'
           name="year"
           onChange={this.handleChange}
           options={this.getYears()}
