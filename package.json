@@ -31,8 +31,7 @@
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "husky": "^2.3.0",
-    "jest": "^24.8.0",
-    "nodemon": "^1.19.0"
+
   },
   "husky": {
     "hooks": {
