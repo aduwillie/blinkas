@@ -8,3 +8,12 @@ $blinkas-ash: rgb(158, 162, 172);
 $blinkas-faded-pink: #e5b8b7;
 $select:#272727;
 
+.inputStyle{
+    color: $blinkas-black;
+    border: 2px solid $blinkas-faded-black;
+    & {
+        @include placeholder{
+            color: $blinkas-faded-black;
+        }
+    }
+}

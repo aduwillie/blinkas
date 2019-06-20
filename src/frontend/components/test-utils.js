@@ -1,4 +1,3 @@
-
 import renderer from 'react-test-renderer';
 
 export const matches = children => expect(
