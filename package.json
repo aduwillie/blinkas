@@ -31,7 +31,6 @@
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
     "husky": "^2.3.0",
-
   },
   "husky": {
     "hooks": {
@@ -39,6 +38,7 @@
     }
   },
   "dependencies": {
+    "@types/jest": "^24.0.13"
     "@hapi/hapi": "^18.3.1",
     "@hapi/vision": "^5.5.2",
     "pug": "^2.0.3"
