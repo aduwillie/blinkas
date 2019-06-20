@@ -1,14 +1,16 @@
 import React from 'react';
 import { matches } from './test-utils';
 import Button from './Button';
+import { shallow } from "enzyme";
 
 describe('Button', () => {
   it('matches snapshot', () => {
     matches(<Button/>);
   });
 });
-it('calls "onClick" prop on button click', () => {
-  const mockfn = jest.fn();
-   matches(<Button onClick={mockfn} />);
-  expect(mockfn).toHaveBeenCalled();
+test('should call start logout on button click', () => {
+  const onClickMock = jest.fn();
+  const wrapper = shallow(<Button onCLick={onClickMock}/>);
+  wrapper.find('button').simulate('click');
+  expect(onClickMock).toHaveBeenCalled();
 });
