@@ -30,7 +30,7 @@
     "@babel/node": "^7.4.5",
     "@babel/preset-env": "^7.4.5",
     "eslint": "^5.16.0",
-    "husky": "^2.3.0",
+    "husky": "^2.3.0"
   },
   "husky": {
     "hooks": {

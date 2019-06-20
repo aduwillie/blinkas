@@ -1,3 +1,25 @@
+.popularMenus{
+    background:'#ffffff';
+}
+
+.popularMenus ul{
+    margin: '0';
+    padding:'0';
+    list-style-type:'none';
+}
+
+.popularMenus ul li{
+    display: 'inline-block';
+    vertical-Align: 'top';
+    width: '14%';
+    text-Align: 'center';
+}
+
+.popularMenus ul li img{
+    margin-bottom: '5px';
+    width: '24px';
+    height: '24px';
+}
 $blinkas-red: #ff0000;
 $blinkas-faded-red: #e13f3f;
 $blinkas-black: #272727;
