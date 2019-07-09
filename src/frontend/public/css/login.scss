@@ -1,0 +1,68 @@
+@import 'variables.scss';
+.formlogin ul>li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+
+}
+.formlogin Button {
+    width: 69px;
+    height: 35px;
+    background-color: $blinkas-faded-red;
+    border: solid 1px $blinkas-red;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 6px 10px 6px 10px;
+}
+.formlogin ul> Input{
+    border-radius: 0 0;
+    padding: 5px;
+    font-size: 1.1em;
+    width: 207px;
+    height: 35px;
+    background-color: #fff !important;
+    width: 207px;
+    height: 35px;
+}
+.login{
+    width: 49%;
+    display: inline-block;
+    
+    vertical-align: top;
+}
+.login-detail, .login2{
+    float: right;
+    
+   }
+   .full-width input[type="checkbox"]{
+    position: relative;
+    top: 2px;
+    background-color: #fff !important;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+.checkbox span{
+    color: $blinkas-ash;
+}
+
+.checkbox{
+display: inline-block;
+}
+.password-help{
+    color: $blinkas-ash;
+    display: inline-block;
+    margin: 0 170px 0 72px;
+}
+.password-help a{
+    color: $blinkas-ash;
+}

@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Input from './Input'
 import Button from './Button'
-import './style.scss'
+import './../public/css/login.scss'
 
 export default class LoginComponent extends Component {
     constructor(props) {
