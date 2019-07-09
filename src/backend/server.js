@@ -2,6 +2,8 @@
 import Hapi from '@hapi/hapi';
 import pug from 'pug';
 import Vision from '@hapi/vision';
+import Inert from 'inert';
+import Path from 'path';
 
 import constants from '../../constants';
  
@@ -10,20 +12,31 @@ const init = async (shouldStart) => {
         port: constants.DEFAULT_PORT
         });
     await server.register(Vision);
+    await server.register(Inert);
     server.views({
         engines: {
             pug: pug
         },
         relativeTo: __dirname,
-        path: './../bakckend/views'
+        path: './views'
     });
     server.route({
         method: 'GET',
         path: '/',
         handler: (request, h) => {
-            return 'hello world';
+            return h.view('index')
         }
     });
+    server.route({
+        method: 'GET',
+        path: '/{param*}',
+        handler: {
+            directory:{
+                path: 'dist/',
+                listing: true
+            }
+        }
+    })
     if(shouldStart){
         await server.start();
         console.log('Server running on ', server.info.uri);
