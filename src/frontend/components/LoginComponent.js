@@ -25,7 +25,7 @@ export default class LoginComponent extends Component {
     render() {
         return (
             <div className="login">
-                <form className="formlogin">
+                <form className="formlogin" onSubmit={this.handleSubmit}>
                     <ul className="login-detail">
                         <li style={{display:'inline-block'}}>
                             <Input   type="email" value={this.state.email} handleChange={this.handleChangeEmail} name="email"  placeholder="Email" />
@@ -52,4 +52,3 @@ export default class LoginComponent extends Component {
         )
     }
 }
-
