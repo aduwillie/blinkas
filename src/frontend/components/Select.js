@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import './style.scss'
 
 const Select =(props)=> {
    return (

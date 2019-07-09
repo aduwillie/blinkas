@@ -1,5 +1,4 @@
 import React from "react";
-import LoginComponent from "./LoginComponent";
 import RegistrationForm from "./RegistrationForm";
 import PopularMenus from "./PopularMenu";
 import LoginBanner from "./LoginBanner";
@@ -9,11 +8,10 @@ const ReactLandingPage = () => {
     <div className="container">
       <header>
         <h1>Blinkas</h1>
-        <LoginComponent />
+        <LoginBanner />
       </header>
       <main>
         <section id="login_container">
-          <LoginBanner />
         </section>
         <section id="registration_container">
           <RegistrationForm />
