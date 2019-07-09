@@ -1,0 +1,34 @@
+@import 'variables.scss';
+body{
+    background: red;
+}
+.loginBanner{
+    display: block;
+    background-color: $blinkas-black;
+    width: 100%;
+    margin: 0 auto;
+}   
+
+.popularMenus ul{
+    margin: '0';
+    padding:'0';
+    list-style-type:'none';
+}
+
+.popularMenus ul li{
+    display: 'inline-block';
+    vertical-Align: 'top';
+    width: '14%';
+    text-Align: 'center';
+}
+
+.popularMenus ul li img{
+    margin-bottom: '5px';
+    width: '24px';
+    height: '24px';
+}
+.inputStyle{
+    color: $blinkas-black;
+    border: 5px solid $blinkas-faded-black;
+} 
+       
