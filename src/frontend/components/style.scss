@@ -9,6 +9,9 @@
             font-size: 4rem;
             font-weight: bold;
             padding: 0 0 0 25px;
+        }
+    }
+}
 .popularMenus{
     background:'#ffffff';
 }
@@ -49,4 +52,69 @@ $select:#272727;
             color: $blinkas-faded-black;
         }
     }
+}
+.formlogin ul>li{
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px;
+
+}
+.formlogin Button {
+    width: 69px;
+    height: 35px;
+    background-color: #E13F3F;
+    border: solid 1px #FF0000;
+    font-size: 1.1em;
+    color: #fff;
+    padding: 6px 10px 6px 10px;
+}
+.formlogin ul> Input{
+    border-radius: 0 0;
+    padding: 5px;
+    font-size: 1.1em;
+    width: 207px;
+    height: 35px;
+    background-color: #fff !important;
+    width: 207px;
+    height: 35px;
+}
+.login{
+    width: 49%;
+    display: inline-block;
+    
+    vertical-align: top;
+}
+.login-detail, .login2{
+    float: right;
+    
+   }
+   .full-width input[type="checkbox"]{
+    position: relative;
+    top: 2px;
+    background-color: #fff !important;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+input[type="checkbox" i] {
+    background-color: initial;
+    cursor: default;
+    -webkit-appearance: checkbox;
+    box-sizing: border-box;
+    margin: 3px 3px 3px 4px;
+    padding: initial;
+    border: initial;
+}
+.checkbox span{
+    color: #bfbfbf;
+}
+
+.checkbox{
+display: inline-block;
+}
+.password-help{
+    color: #bfbfbf;display: inline-block;margin: 0 170px 0 72px;
+}
+.password-help a{
+    color: #BFBFBF
 }
