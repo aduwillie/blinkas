@@ -1,0 +1,49 @@
+@import 'variable.scss';
+main{
+background: $blinkas-ash !important;
+}
+.img-section{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding-left: 10px;
+    text-align: center;
+}
+.img-section > h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(165, 93, 91);
+    margin-bottom: 0;
+    text-transform: uppercase;
+
+}
+.text_underline{
+    text-align: center;
+}
+.img-section > img{
+    width: 450px;
+    height: 260px;
+}
+#registration_container{
+    display: inline-block;
+    vertical-align: top;
+    width: 49%;
+    padding: 0 40px 0 125px;
+}
+#signup-box{
+    border: solid 1px $blinkas-ash;
+    padding: 20px;
+    background-color: #FFF;
+}
+#main_container > h4{
+    font-size: 18px;
+    font-weight: bold;
+    color: rgb(165, 93, 91);
+    text-transform: uppercase;
+}
+#menu_container{
+    margin-top: 32px;
+}
+footer{
+    background: $blinkas-ash !important;
+}
