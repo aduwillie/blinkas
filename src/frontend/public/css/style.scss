@@ -28,4 +28,72 @@
     color: $blinkas-black;
     border: 5px solid $blinkas-faded-black;
 } 
-       
+.navigation{
+    height:40px;
+    width: 100%;
+    background-color: rgb(39,39,39);
+    color: rgb(166, 166, 166);
+    display:inline-flex;
+    padding: 20px;
+}
+.deck-webmates-section{
+    height: 185px;
+    width:100%;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    border-top: 1px solid rgb(191, 191, 191);
+    background-color: rgb(253,253,253);
+}
+
+
+.center-section{
+    text-align: center;
+}
+.shelf-section{
+    height: 185px;
+    width:100%;
+    border-bottom: 1px solid rgb(191, 191, 191);
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+}
+.menu1-section{
+    position: absolute;
+    border: 1px solid rgb(191,191,191);
+    height: 200px;
+    width: 20%;
+    top:40%;
+    left: 20px;
+}
+.menu2-section{
+    position: absolute;
+    border: 1px solid rgb(191,191,191);
+    height: 200px;
+    width: 20%;
+    top:70%;
+    left: 20px;
+}
+.welcome-section{
+    position: absolute;
+    border: 1px solid rgb(191,191,191);
+    height: 300px;
+    width: 40%;
+    top:55%;
+    left: 30%;
+}
+.showfriend-section{
+    position: absolute;
+    border-bottom: 1px solid rgb(191,191,191);
+    border-left: 1px solid rgb(191,191,191);
+    height: 200px;
+    width: 20%;
+    top:47%;
+    left: 80%;
+}
+.feedback{
+    position: absolute;
+    border: 1px solid rgb(191,191,191);
+    background-color: black;
+    height: 15px;
+    width: 150px;
+    top:98%;
+    left: 85%;
+}

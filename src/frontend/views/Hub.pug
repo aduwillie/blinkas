@@ -1,0 +1,40 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=, initial-scale=1.0")
+        meta(http-equiv="X-UA-Compatible", content="ie=edge")
+        link(rel="stylesheet" href="./css/style.css")
+        link(rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css")
+        title Blinkas
+    body
+        div.row.navigation
+                div.col-md-2 Home
+                div.col-md-3 Public Shelves
+                div.col-md-3 -Alpha User-
+                div.col-md-3 #{username}
+                div.col-md-1 
+                    img(src="./images/mypic.jpg" alt="picture of the user" width='20px') 
+        div.row.deck-webmates-section
+            div.col-md-3
+                p Nothing here
+            div.col-md-5.center-section
+                p Paste link of article or video you want to save here
+                input(type='text' placeholder='http://www.example.com/v7=dwjklextstrif')
+            div.col-md-4.right-section User Using Links
+        div.shelf-section
+            p shelves component will be placed here
+        div.menu-feed
+            div.menu1-section
+                p Menu component will be here
+                p 
+                    a(href="#") Unpublished Menus
+            div.menu2-section
+                p Menu manager component 
+                p
+                    a(href="#") Menu Manager
+            div.welcome-section
+                p Welcome component will be put here
+            div.showfriend-section
+                p Friends to show component
+            div.feedback
