@@ -57,7 +57,7 @@
     }
   },
   "dependencies": {
-    "@hapi/hapi": "^18.3.1",
+    "@hapi/hapi": "^19.1.1",
     "@hapi/vision": "^5.5.2",
     "@types/jest": "^24.0.13",
     "inert": "^5.1.3",
